@@ -11,9 +11,8 @@ bot.on("ready", () => {
 })
 
 const token = require("./config.json").token
-const prefix = "p-"
-const ccPrefix = "plixa"
-
+const prefix = "-"
+const ccPrefix = "#!"
 bot.on("message", (message) => {
     if (message.author.bot) return
     // if (!message.member.hasPermission(32))
