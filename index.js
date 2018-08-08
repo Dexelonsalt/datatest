@@ -2,8 +2,9 @@ const Enmap = require("enmap")
 const EnmapLevel = require("enmap-level")
 const fs = require("fs")
 
-const provider = new EnmapLevel({ name: "plixacmds", persistent: true })
+const provider = new EnmapLevel({ name: "tedts", persistent: true });
+
 const myColl = new Enmap({ provider: provider })
 
-
-    console.log(require("./data.json"))
+    myColl.set('null', 'null announces null 2')
+    console.log(myColl.get('null'))
