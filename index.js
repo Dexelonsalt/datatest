@@ -1,5 +1,6 @@
 const Discord = require("discord.js")
 const Enmap = require("enmap")
+const EnmapLevel = require("enmap-level")
 
 const bot = new Discord.Client();
 const commandProvider = new EnmapLevel({ name: "plixacmds", persistent: true })
